@@ -1,0 +1,14 @@
+.bgContainer
+{
+    overflow: visible;
+  video
+  {
+    width: 100%; /* Chiều rộng là 100% của container cha */
+    height: auto; /* Chiều cao tự động để giữ tỷ lệ khung hình */
+  
+    /* Tùy chọn: để đảm bảo video không bị mất chất lượng khi nó phóng to */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
