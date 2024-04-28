@@ -10,11 +10,12 @@ class Next extends React.Component {
     indexprev: 0,
     length: null
   }
+
   componentDidUpdate(prevProps) {
     if (prevProps.listhistory !== this.props.listhistory) {
       this.setState({
         listhistory: this.props.listhistory,
-        length: this.props.listhistory.map(h => h.iD_HISTORY).length
+        length: this.props.listhistory.length
       });
     }
 
@@ -30,7 +31,7 @@ class Next extends React.Component {
       this.setState({
         listhistory: this.props.listhistory,
         history: this.props.history,
-        length: this.props.listhistory.map(h => h.iD_HISTORY).length
+        length: this.props.listhistory.length
       });
     }
   }
@@ -44,30 +45,30 @@ class Next extends React.Component {
           indexnext: prevState.indexnext + 1,
           indexprev: prevState.indexnext + 1
       }));
-  }
-  }
-  prevhis=()=>{
-   if (this.state.indexprev > 0) {
-        let vt = this.state.listhistory[this.state.indexprev - 1];
-        this.props.nextbuton(vt.iD_HISTORY);
-
-        this.setState(prevState => ({
-            indexprev: prevState.indexprev - 1,
-            indexnext: prevState.indexprev - 1
-        }));
     }
   }
+
+  prevhis = () => {
+    if (this.state.indexprev > 0) {
+      let vt = this.state.listhistory[this.state.indexprev - 1];
+      this.props.nextbuton(vt.iD_HISTORY);
+
+      this.setState(prevState => ({
+          indexprev: prevState.indexprev - 1,
+          indexnext: prevState.indexprev - 1
+      }));
+    }
+  }
+
   check = () => {
-    let indexl=this.state.listhistory.map(x=>x.title).indexOf(this.props.title)
+    let indexl = this.state.listhistory.map(x => x.title).indexOf(this.props.title)
 
-    if(indexl ===0 && this.state.indexprev ===0)
-    {
-        return true
+    if (indexl === 0 && this.state.indexprev === 0) {
+      return true
     }
-    else
-    {
+    else {
       return false
-    } ; // Trả về true nếu indexnext là 0, ngược lại trả về false
+    }
   }
 
   render() {

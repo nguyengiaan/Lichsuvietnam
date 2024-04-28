@@ -12,14 +12,37 @@ import '../Style/QuestCollection.scss'
 import {Link,Outlet}   from "react-router-dom";
 import anhdemo from '../Image/2.png'
 function QuestCollection() {
+  const [item,setitem]=useState([]);
+  const Fecthapiques= async ()=>{
+    try
+    {
+      let res= await axios.get("https://localhost:44337/api/Quest/GetCollectionAdmin")
+      setitem(res && res.data ? res.data : []);
+      
+    }catch(error)
+    {
+      console.log(error.message); 
+    }
+  }
+  useEffect(()=>{
+    Fecthapiques()
+  },[item])
   return (
     <div className='containerCol'>
-        <div className='titleQuestC'>
-        <Link to='/lamtracnghiem'><p>Lịch sử 12 32133131</p></Link>
-            <div className='imagequiz'>
-                <img src='https://localhost:44337/Resources/95a2fea2-229d-4d57-8edd-f4fa777623e0.jpg' />
-             </div>
+     {item && item.length > 0 && (
+    <>
+        {item.map((itemData, index) => (
+            <div key={index} className='titleQuestC'>
+                <Link to={'/lamtracnghiem/'+itemData.id_questcollection}>
+                    <p>{itemData.title_collection}</p> 
+                </Link>
+                <div className='imagequiz'>
+                    <img src={'https://localhost:44337/Resources/'+itemData.image_quest} alt="quiz image" /> 
+                </div>
             </div>
+        ))}
+    </>
+)}
       </div>
   );
 }

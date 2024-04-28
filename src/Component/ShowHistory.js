@@ -2,11 +2,11 @@ import React from 'react';
 import '../Style/ShowHistory.scss';
 import Next from './Next';
 import axios from 'axios';
-
+import ReactHtmlParser from 'react-html-parser';
 class ShowHistory extends React.Component {
   state = {
     history: {},
-    id: 3,
+    id: 66,
     listhistory:[],
   }
   async componentDidMount() {
@@ -52,9 +52,9 @@ class ShowHistory extends React.Component {
     const { history } = this.state;
     return (
       <div className='maincontent'>
-        <Next history={this.state.history} listhistory={this.state.listhistory} nextbuton={this.nextbuton} title={history.title}/>
+      <Next history={this.state.history} listhistory={this.state.listhistory} nextbuton={this.nextbuton} title={history.title}/>
         <div className='content'>
-          <p>{history.content}</p>
+          <p>{ReactHtmlParser(history.content)}</p>
         </div>
         <Next history={this.state.history} listhistory={this.state.listhistory} nextbuton={this.nextbuton} title={history.title}/>
       </div>

@@ -1,0 +1,142 @@
+.Addquizlist {
+  min-height: 100px;
+  max-height: 1000px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+}
+.Addquizlist .formquiz {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  min-height: 270px;
+  max-height: 1000px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+.Addquizlist .formquiz .title {
+  position: absolute;
+  top: 80px;
+  width: 1000px;
+}
+.Addquizlist .formquiz .title input {
+  width: 900px;
+  height: 50px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: black;
+}
+.Addquizlist .formquiz .questionlist {
+  width: 100%;
+}
+.Addquizlist .formquiz .questionlist div {
+  margin-top: 30px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+.Addquizlist .formquiz .questionlist div input {
+  height: 50px;
+  width: 350px;
+}
+.Addquizlist .formquiz .questionlist div input[type=checkbox] {
+  height: 50px;
+  width: 50px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+.Addquizlist .formquiz .questionlist div button {
+  background-color: red;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  height: 50px;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  top: 15px;
+}
+.Addquizlist .formquiz .questionlist div button:hover {
+  background-color: greenyellow;
+  cursor: pointer;
+}
+.Addquizlist .formquiz .questionlist div button p {
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}
+.Addquizlist .formquiz input {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  height: 70px;
+}
+.Addquizlist .quizlist {
+  background-color: aliceblue;
+  min-height: 450px;
+  min-width: 500px;
+  min-width: 900px;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.Addquizlist .close {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: end;
+}
+.Addquizlist .close button {
+  background-color: red;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  height: 70px;
+  width: 70px;
+}
+.Addquizlist .close button:hover {
+  background-color: greenyellow;
+  cursor: pointer;
+}
+.Addquizlist .close button p {
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}
+.Addquizlist .next {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.Addquizlist .next button {
+  background-color: rgb(16, 143, 227);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.Addquizlist .next button:hover {
+  background-color: greenyellow;
+  cursor: pointer;
+}
+.Addquizlist .next button p {
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}/*# sourceMappingURL=Addquizlist.css.map */

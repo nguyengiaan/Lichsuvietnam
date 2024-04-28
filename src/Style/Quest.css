@@ -1,0 +1,188 @@
+.containerMain {
+  background-color: white;
+  height: 500px;
+  width: 700px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  font-family: "Be Vietnam Pro";
+  background-image: url("../Image/4.jpg");
+}
+.containerMain .quesTion2 {
+  margin-top: 20px;
+}
+.containerMain .quesTion2 ul {
+  list-style: none;
+}
+.containerMain .quesTion2 ul li div {
+  float: left;
+  margin-right: 10px;
+}
+.containerMain .quesTion2 ul li div p {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-style: normal;
+  color: #544e4e;
+  font-size: 45px;
+}
+.containerMain .result {
+  margin-top: 20px;
+  border-bottom: 3px solid;
+  width: 100%;
+  border-color: #000000;
+}
+.containerMain .result h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-style: normal;
+  color: #e84f4f;
+  font-size: 80px;
+}
+.containerMain button {
+  background-color: rgb(105, 163, 198);
+  border-radius: 10px;
+  width: 200px;
+  height: 80px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+.containerMain .titleQuest {
+  width: 700px;
+  height: 100px;
+  padding: 10px;
+  text-align: left;
+  padding-left: 35px;
+  word-wrap: break-all;
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+  border-color: black;
+}
+.containerMain .titleQuest h1 {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+.containerMain .titleQuest button {
+  height: 10px;
+  width: 10px;
+}
+.containerMain .quesTion {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  height: 70%;
+}
+.containerMain .quesTion ul {
+  list-style: none;
+}
+.containerMain .quesTion ul .quest1 {
+  word-wrap: break-all;
+  border-width: 30px;
+  border-radius: 10px;
+  border-color: rgb(177, 188, 188);
+  padding-left: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgb(232, 226, 226);
+  width: 700px;
+  height: 70px;
+  border: 2px solid;
+  border-color: black;
+  text-align: left;
+  padding-bottom: 20px;
+  margin: 10px;
+}
+.containerMain .quesTion ul .quest1:hover {
+  background-color: rgb(100, 209, 158) !important;
+  cursor: pointer;
+}
+.containerMain .quesTion ul .quest1 p {
+  color: #000000;
+}
+.containerMain .quesTion ul .quest2 {
+  word-wrap: break-all;
+  border-width: 30px;
+  border-radius: 10px;
+  border-color: rgb(177, 188, 188);
+  padding-left: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgb(232, 226, 226);
+  width: 700px;
+  height: 70px;
+  border: 2px solid;
+  border-color: black;
+  text-align: left;
+  padding-bottom: 20px;
+  margin: 10px;
+}
+.containerMain .quesTion ul .quest2:hover {
+  background-color: rgb(100, 209, 158) !important;
+  cursor: pointer;
+}
+.containerMain .quesTion ul .quest2 p {
+  color: #000000;
+}
+.containerMain .quesTion ul .quest3 {
+  word-wrap: break-all;
+  border-width: 30px;
+  border-radius: 10px;
+  border-color: rgb(177, 188, 188);
+  padding-left: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgb(232, 226, 226);
+  width: 700px;
+  height: 70px;
+  border: 2px solid;
+  border-color: black;
+  text-align: left;
+  padding-bottom: 20px;
+  margin: 10px;
+}
+.containerMain .quesTion ul .quest3:hover {
+  background-color: rgb(100, 209, 158) !important;
+  cursor: pointer;
+}
+.containerMain .quesTion ul .quest3 p {
+  color: #000000;
+}
+.containerMain .quesTion ul .quest4 {
+  word-wrap: break-all;
+  border-width: 30px;
+  border-radius: 10px;
+  border-color: rgb(177, 188, 188);
+  padding-left: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgb(232, 226, 226);
+  width: 700px;
+  height: 70px;
+  border: 2px solid;
+  border-color: black;
+  text-align: left;
+  padding-bottom: 20px;
+  margin: 10px;
+}
+.containerMain .quesTion ul .quest4:hover {
+  background-color: rgb(100, 209, 158) !important;
+  cursor: pointer;
+}
+.containerMain .quesTion ul .quest4 p {
+  color: #000000;
+}/*# sourceMappingURL=Quest.css.map */

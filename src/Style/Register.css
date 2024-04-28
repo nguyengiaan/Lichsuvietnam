@@ -1,0 +1,72 @@
+.mainRegister {
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+  margin-bottom: 50px;
+  position: static;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../Image/hinhnenbackgroud2.jpg");
+  background-position: center;
+}
+.mainRegister .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+  margin-top: 100px;
+}
+.mainRegister .form .title {
+  line-height: 0;
+}
+.mainRegister .form .title img {
+  height: 170px;
+  width: 170px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+.mainRegister .form .title h1 {
+  font-family: Arial, sans-serif;
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+}
+.mainRegister .form input {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  height: 50px;
+  width: 500px;
+  border-radius: 7px;
+  padding-left: 10px;
+  font-size: 30px;
+  background-color: #e0cd98;
+  color: black;
+}
+.mainRegister .form button {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  height: 50px;
+  width: 500px;
+  border-radius: 7px;
+  padding-left: 10px;
+  font-size: 30px;
+  background-color: #a56f2c;
+}
+.mainRegister .form button:hover {
+  cursor: pointer;
+}
+.mainRegister .form button span {
+  font-size: 30px;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+.mainRegister .form button p {
+  color: red;
+}
+.mainRegister .form button .form-error {
+  font-size: 20px;
+  color: green;
+}/*# sourceMappingURL=Register.css.map */

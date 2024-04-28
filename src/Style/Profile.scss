@@ -1,0 +1,55 @@
+.containerCol{
+    background-color: white;
+    height: auto;
+    width: 1200px;
+    min-height: 500px;
+    max-height: max-content;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'Be Vietnam Pro';
+    background-image: url("../Image/7.jpg");
+    align-items: center;
+    justify-content: flex-start;
+    .containerquiz
+    {   
+        display: flex;
+        flex-direction: row;
+        min-height: 500px;
+        max-height: 2000px;
+        flex-wrap: wrap;
+    }
+    img
+    {
+        border-radius: 70px;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+        height: 200px;
+        width: 200px;
+    }
+   .user
+   {    
+        margin-left: 50px;
+        p
+        {
+            font-size: 30px;
+            color: black;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+        }
+        button
+        {
+                background-color: rgb(14, 131, 227);
+                border-radius: 10px;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+                height: fit-content;
+                &:hover
+                {
+                    cursor: pointer;
+                    background-color: red;
+                    box-shadow: 0px 0px 10px rgba(2, 2, 2, 0.5);
+                }
+        }
+   }
+
+   }

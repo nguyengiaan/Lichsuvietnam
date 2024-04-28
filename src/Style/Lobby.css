@@ -1,0 +1,17 @@
+.lobby span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.lobby input {
+  width: 500px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.lobby button {
+  width: 500px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=Lobby.css.map */

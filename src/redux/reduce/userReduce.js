@@ -1,6 +1,7 @@
 import { FETCH_USER_REQUEST,FETCH_USER_SUCCESS,FETCH_USER_ERROR,DECODE_TOKEN_FAILURE,DECODE_TOKEN_SUCCESS } from '../action/type';
 import { useJwt } from "react-jwt";
 import { isExpired, decodeToken } from "react-jwt";
+import { useNavigate } from 'react-router-dom';
 const INITIAL_STATE = {
     listdata:[],
     isLoading:false,
@@ -20,9 +21,11 @@ const userReducer = (state = INITIAL_STATE, action) => {
              isError:false,
            };
         case FETCH_USER_SUCCESS:
-            console.log(action)
+
            return {
               ...state,token:action.payload,
+              isLoading:false,
+              isError:false,
            };
            case FETCH_USER_ERROR:
             console.log(action)

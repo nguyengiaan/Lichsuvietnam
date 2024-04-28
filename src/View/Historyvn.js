@@ -6,7 +6,7 @@ import { animateScroll as scroll } from 'react-scroll';
 class Historyvn extends React.Component {
   state = {
     listCato: [],
-    iditem:3,
+    iditem:68,
   };
   async componentDidMount() {
     try {
@@ -41,16 +41,15 @@ class Historyvn extends React.Component {
         <div className='navRight' >
           {uniqueCategories.map((category, index) => (
             <div key={index} className='tiTle'>
-              <p>{category}</p>
+              <div className='title2'>
+                <p>{category}</p>
+              </div>
               <div className='child'>
                 {listCato
                   .filter(item => item.namE_CATOGERY === category)
                   .map((item, subIndex) => (
-                  
-                  <div className='title1' onClick={()=>{this.handleClick(item.iD_HISTORY)}}>
-                      
-                     <p key={subIndex}>&#11039; {item.title}</p> 
-                
+                  <div className='title1' onClick={()=>{this.handleClick(item.iD_HISTORY)}}> 
+                     <p key={subIndex}>&#128747; {item.title}</p> 
                   </div>
                   ))}
               </div>

@@ -6,6 +6,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  box-shadow: 0px 30px 100px rgba(0, 0, 0, 0.5);
 }
 .Container .Image img {
   height: 54px;
@@ -22,13 +23,16 @@
   background-color: #04aa6d;
   border-radius: 40px;
 }
+.Container table td a {
+  text-decoration: none;
+}
 .Container table td p {
   font-family: "Source Sans Pro Topnav", sans-serif;
-  font-size: 16px;
+  font-size: 13px;
+  text-decoration: none;
 }
 .Container table td p:hover:not(.nohovers) {
   cursor: pointer;
-  font-size: 20px;
   font-weight: bold;
 }
 .Container table td .search {

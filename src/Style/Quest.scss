@@ -9,7 +9,49 @@
     border-radius: 10px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     font-family: 'Be Vietnam Pro';
-    background-image: url("../Image/hinhnenbackgroud2.jpg");
+    background-image: url("../Image/4.jpg");
+    .quesTion2
+    {
+        margin-top: 20px;
+        ul
+        {
+            list-style: none;
+           li
+           {
+            
+            div
+            {
+                float: left;
+                margin-right: 10px;
+                p
+                {
+                    text-decoration: none;
+                    font-size: 30px;
+                    font-family: "Dancing Script", cursive;
+                    font-weight: bold;
+                    font-style: normal;
+                     color: #544e4e;
+                     font-size: 45px;
+                }
+            }
+           }     
+        }
+    }
+    .result
+    {
+        margin-top: 20px;
+        border-bottom: 3px solid;
+        width: 100%;
+        border-color: #000000;
+        h1
+        {
+            font-family: "Dancing Script", cursive;
+            font-weight: bold;
+            font-style: normal;
+            color: #e84f4f;
+            font-size: 80px;
+        }
+    }
     button
     {
         background-color: rgb(105, 163, 198);
@@ -27,11 +69,11 @@
         padding: 10px;
         text-align: left;
         padding-left: 35px;
-        word-wrap: break-all
+        word-wrap: break-all;
         h1{
             font-size: 25px;
             font-weight: bold;
-            color: rgb(0, 0, 0);
+            color: rgb(0, 0, 0) ;
 
         }
         border-bottom: 1px solid;
@@ -44,6 +86,7 @@
      }
      .quesTion
      {
+        
         justify-content: center;
         align-content: center;
         display: flex;
@@ -53,7 +96,7 @@
         ul{
             list-style: none;
             @for $i from 1 through 4 {
-                #quest#{$i}
+                .quest#{$i}
                 {
                     word-wrap: break-all;
                     border-width: 30px;
@@ -62,25 +105,32 @@
                     padding-left: 10px;
                     height: fit-content;
                     width: fit-content;
-                    background-color: rgb(255, 253, 253);
+                    background-color: rgb(232, 226, 226);
                     width: 700px;
                     height: 70px;
-                   border: 2px solid;
-                   border-color:black ;
+                     border: 2px solid;
+                     border-color:black ;
                     text-align: left;
                     padding-bottom: 20px;
                     margin: 10px;
                     &:hover{
-                        background-color: rgb(100, 209, 158);
+                        background-color: rgb(100, 209, 158) !important;
                         cursor: pointer;
                     }
                     p{
-                        color: black;
+                        color: #000000;
                     }
 
                 }
             }
           
         }
+     }
+     .divli{
+        display: flex;
+        flex-direction:row ;
+        width: 700px;
+        align-items: center;
+        justify-content: center;
      }
 }
